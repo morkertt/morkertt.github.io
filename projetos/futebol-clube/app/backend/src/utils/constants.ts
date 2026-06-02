@@ -1,0 +1,12 @@
+export const EMPTY_FIELD = 'All fields must be filled';
+export const INCORRECT_FIELD = 'Incorrect email or password';
+export const INVALID_AUTHORIZATION = 'Invalid Authorization';
+export const INVALID_TOKEN = 'Token must be a valid token';
+export const TOKEN_NOT_FOUND = 'Token not found';
+export const TEAM_NOT_FOUND = 'Team not found';
+export const INVALID_ID = 'ID must be a number';
+export const FINISHED = 'Finished';
+export const INCORRECT_MATCH = 'Match does not exist';
+export const TWO_EQUAL_TEAMS = 'It is not possible to create a match with two equal teams';
+export const TEAM_ID_NOT_FOUND = 'There is no team with such id!';
+export const MATCH_UPDATED = 'Match up to date';
