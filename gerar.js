@@ -58,6 +58,7 @@ const html = `<!DOCTYPE html><html lang="pt-BR"><head>
       <p class="tagline">Do front ao deploy: JavaScript, React, Node/TypeScript e Python. Abaixo, ${total} projetos construídos ao longo da minha formação — ${comDemo} com demo ao vivo e ${comCodigo} com código aberto.</p>
       <div class="links">
         <a class="link primary" href="https://github.com/morkertt" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="link" href="https://www.linkedin.com/in/andremorkertt/" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="link" href="mailto:andre.morkertt@gmail.com">E-mail</a>
       </div>
     </div>
