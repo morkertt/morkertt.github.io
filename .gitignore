@@ -5,3 +5,4 @@ preview*.png
 live-*.png
 shot-*.png
 *.log
+.claude/

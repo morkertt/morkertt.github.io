@@ -100,16 +100,10 @@ main{max-width:1080px;margin:0 auto;padding:30px 32px 90px}
   display:flex;flex-direction:column;min-height:170px;overflow:hidden;
   opacity:0;animation:fadeUp .6s forwards;transition:transform .3s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s;
 }
-.card::before{
-  content:"";position:absolute;inset:0;border-radius:16px;padding:1px;
-  background:linear-gradient(140deg,transparent,transparent);
-  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-  -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s;
-}
 .card:hover{transform:translateY(-6px);border-color:var(--line-strong);box-shadow:0 24px 50px -20px rgba(0,0,0,.7)}
 .card.curado{border-color:rgba(216,184,120,.28)}
 .card.curado::after{
-  content:"";position:absolute;top:0;left:0;width:100%;height:2px;
+  content:"";position:absolute;top:0;left:0;width:100%;height:2px;pointer-events:none;
   background:linear-gradient(90deg,var(--gold),transparent 70%);
 }
 .card.curado:hover{box-shadow:0 24px 60px -18px rgba(216,184,120,.25),0 24px 50px -20px rgba(0,0,0,.7)}
