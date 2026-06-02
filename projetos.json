@@ -1,0 +1,480 @@
+[
+  {
+    "slug": "pixels-art",
+    "nome": "Pixels Art",
+    "categoria": "Fundamentos JS",
+    "stack": [
+      "JavaScript",
+      "DOM",
+      "localStorage"
+    ],
+    "demo": true,
+    "codigo": true,
+    "descricao": "Editor de pixel art com paleta aleatória e persistência.",
+    "origem": "tryber/sd-016-a-project-pixels-art"
+  },
+  {
+    "slug": "shopping-cart",
+    "nome": "Shopping Cart",
+    "categoria": "Fundamentos JS",
+    "stack": [
+      "JavaScript",
+      "Async/Await",
+      "API"
+    ],
+    "demo": true,
+    "codigo": true,
+    "descricao": "Carrinho de compras consumindo API do Mercado Livre.",
+    "origem": "tryber/sd-016-a-project-shopping-cart"
+  },
+  {
+    "slug": "trybewarts",
+    "nome": "Trybewarts",
+    "categoria": "Fundamentos JS",
+    "stack": [
+      "JavaScript",
+      "Forms",
+      "DOM"
+    ],
+    "demo": true,
+    "codigo": true,
+    "descricao": "Formulário interativo com validação e contadores.",
+    "origem": "tryber/sd-016-a-project-trybewarts"
+  },
+  {
+    "slug": "sd-016-a-project-color-guess",
+    "nome": "Color Guess",
+    "categoria": "Fundamentos JS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-016-a-project-color-guess"
+  },
+  {
+    "slug": "sd-016-a-project-js-unit-tests",
+    "nome": "Js Unit Tests",
+    "categoria": "Fundamentos JS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-016-a-project-js-unit-tests"
+  },
+  {
+    "slug": "sd-016-a-project-lessons-learned",
+    "nome": "Lessons Learned",
+    "categoria": "Fundamentos JS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-016-a-project-lessons-learned"
+  },
+  {
+    "slug": "sd-016-a-project-playground-functions",
+    "nome": "Playground Functions",
+    "categoria": "Fundamentos JS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-016-a-project-playground-functions"
+  },
+  {
+    "slug": "sd-016-a-project-solar-system",
+    "nome": "Solar System",
+    "categoria": "Fundamentos JS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-016-a-project-solar-system"
+  },
+  {
+    "slug": "sd-016-a-project-todo-list",
+    "nome": "Todo List",
+    "categoria": "Fundamentos JS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-016-a-project-todo-list"
+  },
+  {
+    "slug": "sd-016-a-project-zoo-functions",
+    "nome": "Zoo Functions",
+    "categoria": "Fundamentos JS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-016-a-project-zoo-functions"
+  },
+  {
+    "slug": "starwars-search",
+    "nome": "Star Wars Planets Search",
+    "categoria": "React",
+    "stack": [
+      "React",
+      "Context API",
+      "Hooks"
+    ],
+    "demo": true,
+    "codigo": true,
+    "descricao": "Busca e filtra planetas de Star Wars com Context API.",
+    "origem": "tryber/sd-017-project-starwars-planets-search"
+  },
+  {
+    "slug": "trybetunes",
+    "nome": "Trybetunes",
+    "categoria": "React",
+    "stack": [
+      "React",
+      "API REST"
+    ],
+    "demo": true,
+    "codigo": true,
+    "descricao": "App de música que busca artistas e toca prévias via API.",
+    "origem": "tryber/sd-017-project-trybetunes"
+  },
+  {
+    "slug": "trybewallet",
+    "nome": "Trybewallet",
+    "categoria": "React",
+    "stack": [
+      "React",
+      "Redux"
+    ],
+    "demo": true,
+    "codigo": true,
+    "descricao": "Carteira de despesas com conversão de moedas em tempo real.",
+    "origem": "tryber/sd-017-project-trybewallet"
+  },
+  {
+    "slug": "sd-017-project-frontend-online-store",
+    "nome": "Frontend Online Store",
+    "categoria": "React",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-project-frontend-online-store"
+  },
+  {
+    "slug": "sd-017-project-react-testing-library",
+    "nome": "React Testing Library",
+    "categoria": "React",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-project-react-testing-library"
+  },
+  {
+    "slug": "sd-017-project-recipes-app",
+    "nome": "Recipes App",
+    "categoria": "React",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-project-recipes-app"
+  },
+  {
+    "slug": "sd-017-project-trivia-react-redux",
+    "nome": "Trivia React Redux",
+    "categoria": "React",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-project-trivia-react-redux"
+  },
+  {
+    "slug": "blogs-api",
+    "nome": "Blogs API",
+    "categoria": "Back-end Node/TS",
+    "stack": [
+      "Node",
+      "Express",
+      "Sequelize",
+      "JWT"
+    ],
+    "demo": false,
+    "codigo": true,
+    "descricao": "API REST de blog com autenticação JWT e ORM Sequelize.",
+    "origem": "tryber/sd-019-a-project-blogs-api"
+  },
+  {
+    "slug": "car-shop",
+    "nome": "Car Shop",
+    "categoria": "Back-end Node/TS",
+    "stack": [
+      "TypeScript",
+      "POO",
+      "MongoDB"
+    ],
+    "demo": false,
+    "codigo": true,
+    "descricao": "API de concessionária com POO e MongoDB (Mongoose).",
+    "origem": "tryber/sd-019-a-project-car-shop"
+  },
+  {
+    "slug": "store-manager",
+    "nome": "Store Manager",
+    "categoria": "Back-end Node/TS",
+    "stack": [
+      "Node",
+      "Express",
+      "MySQL",
+      "Testes"
+    ],
+    "demo": false,
+    "codigo": true,
+    "descricao": "API de gestão de vendas em camadas (MSC) com testes.",
+    "origem": "tryber/sd-017-store-manager"
+  },
+  {
+    "slug": "futebol-clube",
+    "nome": "Trybe Futebol Clube",
+    "categoria": "Back-end Node/TS",
+    "stack": [
+      "TypeScript",
+      "JWT",
+      "Docker",
+      "Sequelize"
+    ],
+    "demo": false,
+    "codigo": true,
+    "descricao": "API de classificação de futebol em TS, JWT e Docker.",
+    "origem": "tryber/sd-019-a-trybe-futebol-clube"
+  },
+  {
+    "slug": "trybesmith",
+    "nome": "Trybesmith",
+    "categoria": "Back-end Node/TS",
+    "stack": [
+      "TypeScript",
+      "Express",
+      "MySQL"
+    ],
+    "demo": false,
+    "codigo": true,
+    "descricao": "API de loja medieval em TypeScript com MySQL.",
+    "origem": "tryber/sd-019-a-project-trybesmith"
+  },
+  {
+    "slug": "sd-019-a-project-algorithms",
+    "nome": "Algorithms",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-019-a-project-algorithms"
+  },
+  {
+    "slug": "sd-017-mysql-all-for-one",
+    "nome": "All For One",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-mysql-all-for-one"
+  },
+  {
+    "slug": "sd-017-project-blogs-api",
+    "nome": "Blogs Api",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-project-blogs-api"
+  },
+  {
+    "slug": "sd-019-a-project-delivery-app",
+    "nome": "Delivery App",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-019-a-project-delivery-app"
+  },
+  {
+    "slug": "sd-017-project-docker-todo-list",
+    "nome": "Docker Todo List",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-project-docker-todo-list"
+  },
+  {
+    "slug": "sd-019-a-inventory-report",
+    "nome": "Inventory Report",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-019-a-inventory-report"
+  },
+  {
+    "slug": "sd-019-a-project-job-insights",
+    "nome": "Job Insights",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-019-a-project-job-insights"
+  },
+  {
+    "slug": "sd-019-a-mongodb-commerce",
+    "nome": "Mongodb Commerce",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-019-a-mongodb-commerce"
+  },
+  {
+    "slug": "sd-017-mysql-one-for-all",
+    "nome": "One For All",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-mysql-one-for-all"
+  },
+  {
+    "slug": "sd-019-a-stranger-things-backend",
+    "nome": "Stranger Things Backend",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-019-a-stranger-things-backend"
+  },
+  {
+    "slug": "sd-019-a-stranger-things-frontend",
+    "nome": "Stranger Things Frontend",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-019-a-stranger-things-frontend"
+  },
+  {
+    "slug": "sd-017-project-talker-manager",
+    "nome": "Talker Manager",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-project-talker-manager"
+  },
+  {
+    "slug": "sd-019-a-tech-news",
+    "nome": "Tech News",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-019-a-tech-news"
+  },
+  {
+    "slug": "sd-019-a-project-trybers-and-dragons",
+    "nome": "Trybers And Dragons",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-019-a-project-trybers-and-dragons"
+  },
+  {
+    "slug": "sd-017-project-tryunfo",
+    "nome": "Tryunfo",
+    "categoria": "Back-end Node/TS",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-017-project-tryunfo"
+  },
+  {
+    "slug": "job-insights",
+    "nome": "Job Insights",
+    "categoria": "Python",
+    "stack": [
+      "Python",
+      "Testes"
+    ],
+    "demo": false,
+    "codigo": true,
+    "descricao": "Análise de dados de vagas de emprego em Python.",
+    "origem": "tryber/sd-021-b-project-job-insights"
+  },
+  {
+    "slug": "sd-021-b-project-algorithms",
+    "nome": "Algorithms",
+    "categoria": "Python",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-021-b-project-algorithms"
+  },
+  {
+    "slug": "sd-021-b-inventory-report",
+    "nome": "Inventory Report",
+    "categoria": "Python",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-021-b-inventory-report"
+  },
+  {
+    "slug": "sd-021-b-restaurant-orders",
+    "nome": "Restaurant Orders",
+    "categoria": "Python",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-021-b-restaurant-orders"
+  },
+  {
+    "slug": "sd-021-b-tech-news",
+    "nome": "Tech News",
+    "categoria": "Python",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-021-b-tech-news"
+  },
+  {
+    "slug": "sd-021-b-project-ting",
+    "nome": "Ting",
+    "categoria": "Python",
+    "stack": [],
+    "demo": false,
+    "codigo": false,
+    "descricao": "",
+    "origem": "tryber/sd-021-b-project-ting"
+  }
+]
