@@ -2,4 +2,6 @@ node_modules/
 .DS_Store
 projetos/**/node_modules/
 preview*.png
+live-*.png
+shot-*.png
 *.log
