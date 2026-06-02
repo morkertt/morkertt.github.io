@@ -1,0 +1,29 @@
+:root{ --navy:#16243f; --navy2:#1f3257; --tan:#c9b48d; --txt:#2b2b2b; --muted:#6b7280; --line:#e5e7eb; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",Arial,sans-serif;color:var(--txt);background:#f7f8fa;line-height:1.5}
+a{color:inherit;text-decoration:none}
+header{background:var(--navy);color:#fff;padding:48px 24px}
+.header-inner{max-width:1000px;margin:0 auto;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.avatar{width:84px;height:84px;border-radius:50%;background-size:cover;background-position:center;flex-shrink:0;border:3px solid var(--tan)}
+.h-name{font-size:28px;font-weight:800}
+.h-role{color:var(--tan);letter-spacing:1px;font-size:13px;text-transform:uppercase;margin-top:4px}
+.h-links{margin-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+.h-links a{background:var(--navy2);padding:7px 14px;border-radius:6px;font-size:13px;font-weight:600}
+.h-links a:hover{background:var(--tan);color:var(--navy)}
+main{max-width:1000px;margin:0 auto;padding:32px 24px 64px}
+.cat{font-size:20px;font-weight:800;color:var(--navy);margin:34px 0 14px;border-bottom:2px solid var(--line);padding-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column}
+.card.curado{border-left:4px solid var(--tan)}
+.c-nome{font-weight:700;font-size:16px;color:var(--navy)}
+.c-desc{color:var(--muted);font-size:13px;margin:6px 0 10px;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tag{background:#eef1f6;color:var(--navy);font-size:11px;font-weight:600;padding:3px 8px;border-radius:20px}
+.btns{display:flex;gap:8px}
+.btn{font-size:13px;font-weight:600;padding:7px 12px;border-radius:6px;text-align:center}
+.btn-demo{background:var(--navy);color:#fff}
+.btn-demo:hover{background:var(--navy2)}
+.btn-code{background:#fff;color:var(--navy);border:1px solid var(--navy)}
+.btn-code:hover{background:var(--navy);color:#fff}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:24px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
