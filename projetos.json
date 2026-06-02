@@ -148,11 +148,11 @@
       "React",
       "Redux"
     ],
-    "demo": false,
+    "demo": true,
     "codigo": true,
     "descricao": "Carteira de despesas com conversão de moedas em tempo real.",
     "origem": "tryber/sd-017-project-trybewallet",
-    "react": false
+    "react": true
   },
   {
     "slug": "sd-017-project-frontend-online-store",

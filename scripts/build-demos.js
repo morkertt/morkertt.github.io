@@ -22,9 +22,10 @@ for (const slug of REACT){
     fs.writeFileSync(pkgPath, JSON.stringify(pkg,null,2));
 
     console.log(`\n=== [${slug}] instalando deps ===`);
-    try { run('npm ci --no-audit --no-fund', dir); }
+    // --engine-strict=false sobrescreve .npmrc de projetos antigos (engines node:16)
+    try { run('npm ci --no-audit --no-fund --engine-strict=false', dir); }
     catch { console.log(`[${slug}] npm ci falhou, tentando npm install --legacy-peer-deps`);
-            run('npm install --no-audit --no-fund --legacy-peer-deps', dir); }
+            run('npm install --no-audit --no-fund --legacy-peer-deps --engine-strict=false', dir); }
 
     console.log(`=== [${slug}] build ===`);
     run('npm run build', dir, { CI:'false', NODE_OPTIONS:'--openssl-legacy-provider' });
