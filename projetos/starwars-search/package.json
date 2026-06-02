@@ -45,5 +45,6 @@
     "eslint-config-trybe-frontend": "1.2.2",
     "stylelint": "13.8.0",
     "stylelint-order": "4.1.0"
-  }
+  },
+  "homepage": "."
 }

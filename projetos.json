@@ -123,7 +123,8 @@
     "demo": true,
     "codigo": true,
     "descricao": "Busca e filtra planetas de Star Wars com Context API.",
-    "origem": "tryber/sd-017-project-starwars-planets-search"
+    "origem": "tryber/sd-017-project-starwars-planets-search",
+    "react": true
   },
   {
     "slug": "trybetunes",
@@ -136,7 +137,8 @@
     "demo": true,
     "codigo": true,
     "descricao": "App de música que busca artistas e toca prévias via API.",
-    "origem": "tryber/sd-017-project-trybetunes"
+    "origem": "tryber/sd-017-project-trybetunes",
+    "react": true
   },
   {
     "slug": "trybewallet",
@@ -146,10 +148,11 @@
       "React",
       "Redux"
     ],
-    "demo": true,
+    "demo": false,
     "codigo": true,
     "descricao": "Carteira de despesas com conversão de moedas em tempo real.",
-    "origem": "tryber/sd-017-project-trybewallet"
+    "origem": "tryber/sd-017-project-trybewallet",
+    "react": false
   },
   {
     "slug": "sd-017-project-frontend-online-store",
