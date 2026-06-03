@@ -1,41 +1,87 @@
-.App {
-  text-align: center;
+:root{
+  --amber:#ffb627; --blue:#4aa3ff; --panel:#0f1626; --panel-2:#141d31;
+  --line:rgba(120,150,210,.22); --text:#d7e0f0; --muted:#8a96b4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HEADER / painel de controle */
+header{
+  max-width:1180px; margin:0 auto; padding:38px 24px 10px; text-align:center;
 }
-
-@media ( prefers-reduced-motion : no-preference ) {
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1{
+  font-family:"Orbitron",sans-serif; font-weight:800; font-size:clamp(26px,5vw,42px);
+  letter-spacing:4px; text-transform:uppercase; color:var(--amber);
+  text-shadow:0 0 22px rgba(255,182,39,.35); margin-bottom:14px;
 }
-
-.App-header {
-  align-items: center;
-  background-color: #282c34;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  justify-content: center;
-  min-height: 100vh;
+.demo-hint{
+  max-width:720px; margin:0 auto 22px; font-size:14px; color:var(--muted);
+  background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--amber);
+  border-radius:10px; padding:13px 18px; text-align:left;
 }
+.demo-hint b{ color:var(--text); font-weight:600; }
 
-.App-link {
-  color: #61dafb;
+header > input[type="text"]{
+  width:100%; max-width:420px; padding:13px 16px; font-size:15px;
+  background:var(--panel-2); border:1px solid var(--line); border-radius:10px;
+  color:var(--text); outline:none; transition:border-color .2s, box-shadow .2s;
 }
+header > input[type="text"]::placeholder{ color:var(--muted); }
+header > input[type="text"]:focus{ border-color:var(--blue); box-shadow:0 0 0 3px rgba(74,163,255,.18); }
 
-@keyframes App-logo-spin {
-
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+/* form de filtro numérico */
+header form{
+  display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:center;
+  margin:20px auto 4px; max-width:900px; padding:16px;
+  background:var(--panel); border:1px solid var(--line); border-radius:14px;
 }
+header form label{
+  display:flex; align-items:center; gap:8px; font-size:13px; color:var(--muted);
+  font-family:"JetBrains Mono",monospace;
+}
+header select, header form input[type="number"]{
+  background:var(--panel-2); border:1px solid var(--line); border-radius:8px;
+  color:var(--text); padding:9px 11px; font-size:14px; outline:none;
+}
+header select:focus, header form input[type="number"]:focus{ border-color:var(--blue); }
+header button[type="submit"]{
+  font-family:"JetBrains Mono",monospace; font-weight:600; letter-spacing:.5px;
+  background:var(--amber); color:#1a1304; border:0; border-radius:8px;
+  padding:10px 20px; cursor:pointer; transition:.2s;
+}
+header button[type="submit"]:hover{ filter:brightness(1.08); transform:translateY(-1px); }
+
+/* chips de filtros aplicados */
+header section{
+  display:inline-flex; align-items:center; gap:8px; margin:8px 6px 0;
+  background:rgba(74,163,255,.12); border:1px solid var(--line); border-radius:999px;
+  padding:5px 6px 5px 14px;
+}
+header section p{ font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--blue); }
+header section button{
+  background:transparent; color:var(--muted); border:0; cursor:pointer; font-size:14px;
+  width:22px; height:22px; border-radius:50%;
+}
+header section button:hover{ background:rgba(255,255,255,.08); color:#fff; }
+
+/* TABELA estilo HUD */
+table{
+  width:calc(100% - 48px); max-width:1400px; margin:26px auto 60px;
+  border-collapse:collapse; font-size:13px;
+  background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden;
+  display:block; overflow-x:auto; white-space:nowrap;
+}
+thead th{
+  position:sticky; top:0; background:#0c1322; color:var(--amber);
+  font-family:"JetBrains Mono",monospace; font-weight:500; font-size:11px;
+  letter-spacing:.08em; text-transform:uppercase; text-align:left;
+  padding:13px 14px; border-bottom:1px solid var(--line);
+}
+tbody td{
+  padding:12px 14px; border-bottom:1px solid rgba(120,150,210,.10);
+  font-family:"JetBrains Mono",monospace; color:var(--text); vertical-align:top;
+}
+tbody tr:nth-child(even){ background:rgba(120,150,210,.05); }
+tbody tr:hover{ background:rgba(74,163,255,.10); }
+tbody td a{ color:var(--blue); text-decoration:none; }
+tbody td a:hover{ text-decoration:underline; }
+tbody td ul{ margin:0; padding-left:16px; }
+tbody td:first-child{ color:var(--amber); font-weight:500; }

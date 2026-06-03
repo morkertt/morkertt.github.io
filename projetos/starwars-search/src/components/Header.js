@@ -47,6 +47,7 @@ function Header() {
   return (
     <header>
       <h1>Star Wars Planets</h1>
+      <p className="demo-hint">Como testar: a tabela já vem com os planetas. Digite no campo abaixo para filtrar por <b>nome</b>, ou monte um filtro numérico (coluna + operador + valor) e clique em <b>Filter</b>.</p>
       <input
         type="text"
         data-testid="name-filter"
