@@ -48,6 +48,8 @@ class Login extends React.Component {
 
   render() {
     const { nameInput, isButtonDisabled, loading, redirect } = this.state;
+    const hint = 'Como testar: digite um nome (3+ letras) e clique em Entrar. '
+      + 'Depois busque um artista (ex.: Coldplay), abra um álbum e favorite músicas.';
 
     return (
       <div data-testid="page-login">
@@ -55,6 +57,7 @@ class Login extends React.Component {
           : (
             <>
               <h2>Login</h2>
+              <p className="demo-hint">{hint}</p>
               <form>
                 Nome:
                 <input
