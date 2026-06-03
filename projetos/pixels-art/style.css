@@ -23,6 +23,13 @@ body{
   text-shadow:3px 3px 0 rgba(0,0,0,.45);
 }
 
+.demo-hint{
+  max-width:520px; margin:-6px auto 0; font-size:13px; line-height:1.55; color:var(--muted);
+  background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:10px; padding:11px 15px;
+}
+.demo-hint b{ color:var(--text); font-weight:600; }
+
 /* paleta de cores */
 #color-palette{
   display:inline-flex; gap:12px; justify-content:center; align-items:center;
