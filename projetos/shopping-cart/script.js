@@ -1,3 +1,15 @@
+function formatBRL(n) {
+  return Number(n).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+}
+
+function parsePrice(text) {
+  const match = String(text).match(/[\d.,]+\s*$/);
+  if (!match) return 0;
+  let s = match[0].trim();
+  if (s.includes(',')) s = s.replace(/\./g, '').replace(',', '.');
+  return parseFloat(s) || 0;
+}
+
 function load() {
   const loading = document.createElement('p');
   loading.className = 'loading';
@@ -32,10 +44,13 @@ function total() {
   });
   const totalPrice = document.querySelector('.total-price');
   if (cart.length === 0 || cart === null) {
-    totalPrice.remove();
+    if (totalPrice) totalPrice.remove();
   } else {
-    const subTotal = list.reduce((previous, current) => previous + current);
-    totalPrice.innerText = subTotal;
+    const subTotal = [...cart].reduce((acc, el) => {
+      const fromData = Number(el.dataset.price);
+      return acc + (Number.isFinite(fromData) ? fromData : parsePrice(el.innerText));
+    }, 0);
+    if (totalPrice) totalPrice.innerText = `Total: ${formatBRL(subTotal)}`;
   }
   setLocalStorage();
 }
@@ -88,7 +103,8 @@ async function getLocalStorage() {
 function createCartItemElement({ sku, name, salePrice }) {
   const li = document.createElement('li');
   li.className = 'cart__item';
-  li.innerText = `SKU: ${sku} | NAME: ${name} | PRICE: $${salePrice}`;
+  li.dataset.price = salePrice;
+  li.innerText = `${name} — ${formatBRL(salePrice)}`;
   li.addEventListener('click', cartItemClickListener);
   return li;
 }
