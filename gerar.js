@@ -10,14 +10,14 @@ const IC_DEMO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stro
 const IC_CODE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18-6-6 6-6m6 0 6 6-6 6"/></svg>';
 
 let n = 0; // contador global p/ stagger
-function card(p){
+function card(p, extra){
   const delay = (n++ * 0.045).toFixed(3);
   const tags = p.stack.map(t=>`<span class="tag">${esc(t)}</span>`).join('');
   let btns = '';
   if (p.demo){ const base = p.react ? `projetos/${p.slug}/build/` : `projetos/${p.slug}/`;
     btns += `<a class="btn btn-demo" href="${base}">${IC_DEMO} Demo</a>`; }
   if (p.codigo) btns += `<a class="btn btn-code" href="${GH}/${p.slug}/">${IC_CODE} Código</a>`;
-  return `<article class="card ${p.codigo?'curado':''}" style="animation-delay:${delay}s">
+  return `<article class="card ${p.codigo?'curado':''} ${extra?'extra':''}" style="animation-delay:${delay}s">
     <h3 class="c-nome">${esc(p.nome)}</h3>
     <p class="c-desc ${p.descricao?'':'plain'}">${esc(p.descricao || 'Projeto desenvolvido durante o bootcamp.')}</p>
     ${tags?`<div class="tags">${tags}</div>`:''}
@@ -26,15 +26,20 @@ function card(p){
 }
 
 const presentes = ORDEM.filter(c=>projetos.some(p=>p.categoria===c));
+const VISIVEIS = 3;
 const secoes = presentes.map((cat,i) => {
   const itens = projetos.filter(p=>p.categoria===cat);
-  return `<section><div class="cat">
+  const cards = itens.map((p,idx)=>card(p, idx>=VISIVEIS)).join('');
+  const extras = Math.max(0, itens.length-VISIVEIS);
+  const btn = extras>0
+    ? `<button class="ver-mais" aria-expanded="false">Ver mais (${extras})</button>` : '';
+  return `<section class="cat-sec"><div class="cat">
       <span class="idx">${String(i+1).padStart(2,'0')}</span>
       <h2>${esc(cat)}</h2>
       <span class="count">${itens.length} projeto${itens.length>1?'s':''}</span>
       <span class="rule"></span>
     </div>
-    <div class="grid">${itens.map(card).join('')}</div></section>`;
+    <div class="grid">${cards}</div>${btn}</section>`;
 }).join('');
 
 const total = projetos.length;
@@ -75,6 +80,17 @@ const html = `<!DOCTYPE html><html lang="pt-BR"><head>
   <span>© 2026 André Morkertt</span>
   <span><a href="https://github.com/morkertt" target="_blank" rel="noopener">github.com/morkertt</a></span>
 </footer>
+<script>
+document.querySelectorAll('.ver-mais').forEach(function(b){
+  b.addEventListener('click',function(){
+    var sec=b.closest('.cat-sec');
+    var open=sec.classList.toggle('aberto');
+    b.setAttribute('aria-expanded',open);
+    var n=sec.querySelectorAll('.card.extra').length;
+    b.textContent=open?'Ver menos':'Ver mais ('+n+')';
+  });
+});
+</script>
 </body></html>`;
 
 fs.writeFileSync(BASE + '/index.html', html);
