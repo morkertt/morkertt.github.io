@@ -1,138 +1,99 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap');
+
+:root{
+  --bg:#15120d; --panel:#221a12; --panel2:#2b2118; --line:#473a28;
+  --gold:#c9a24b; --gold-bright:#e3c277; --text:#ece3d0; --muted:#b3a585;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Georgia,"Times New Roman",serif; color:var(--text); line-height:1.6;
+  min-height:100vh; padding-bottom:40px;
+  background:
+    radial-gradient(900px 500px at 50% -10%, rgba(201,162,75,.12), transparent 60%),
+    radial-gradient(600px 400px at 100% 100%, rgba(201,162,75,.06), transparent 60%),
+    var(--bg);
 }
 
-.header {
-  display: flex;
-  background-color: rgb(50, 167, 145);
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+/* header */
+.header{
+  display:flex; flex-direction:column; align-items:center; gap:14px;
+  padding:38px 20px 26px; border-bottom:1px solid var(--line);
 }
-
-.trybewarts-login {
-  display: flex;
-  padding: 20px;
+.trybewarts-header-logo{ width:60px; height:auto; filter:drop-shadow(0 4px 10px rgba(0,0,0,.5)); }
+#trybewarts-header-title{
+  font-family:"Cinzel",serif; font-weight:700; font-size:clamp(30px,6vw,48px);
+  color:var(--gold-bright); letter-spacing:3px; text-shadow:0 2px 14px rgba(201,162,75,.25);
 }
-
-header .trybewarts-header-logo {
-  width: 100px;
-  margin-left: 20px;
+.trybewarts-login{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:4px; }
+.trybewarts-login input{ min-width:200px; }
+#login{
+  font-family:"Cinzel",serif; font-weight:600; letter-spacing:1px; cursor:pointer;
+  background:var(--gold); color:#1c1402; border:0; border-radius:8px; padding:11px 22px;
+  transition:.2s;
 }
+#login:hover{ background:var(--gold-bright); }
 
-
-header #trybewarts-header-title {
-  font-size: 50px;
-  color: white;
+/* hint */
+.demo-hint{
+  max-width:680px; margin:22px auto 0; font-size:14px; color:var(--muted);
+  background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--gold);
+  border-radius:10px; padding:13px 18px;
 }
+.demo-hint b{ color:var(--gold-bright); font-weight:600; }
 
-main {
-  display: flex;
-  justify-content: space-around;
+/* form */
+main{ display:flex; flex-direction:column; align-items:center; padding:26px 20px; gap:22px; }
+.container-forms{ width:100%; max-width:700px; }
+#evaluation-form{
+  display:flex; flex-direction:column; gap:16px;
+  background:var(--panel); border:1px solid var(--line); border-radius:16px;
+  padding:30px; box-shadow:0 26px 60px rgba(0,0,0,.5);
 }
-
-#evaluation-form {
-  width: 675px;
+input[type="text"],input[type="email"],input[type="password"],select,textarea{
+  background:var(--panel2); border:1px solid var(--line); border-radius:9px;
+  color:var(--text); padding:12px 14px; font-family:inherit; font-size:15px; width:100%;
+  transition:border-color .2s, box-shadow .2s;
 }
-
-main #evaluation-form {
-  display: flex;
-  flex-direction: column;
+input:focus,select:focus,textarea:focus{
+  outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(201,162,75,.15);
 }
+::placeholder{ color:#8c8067; }
+.container-nome{ display:flex; gap:12px; flex-wrap:wrap; }
+.container-nome input{ flex:1; min-width:160px; }
+.container-email-casa{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+.container-email-casa input{ flex:1; min-width:200px; }
+#label{ color:var(--muted); }
+#house{ min-width:160px; width:auto; }
 
-#trybewarts-forms-logo {
-  height: 500px;
+.container-flex{ display:flex; gap:24px; flex-wrap:wrap; }
+.container-flex section{ flex:1; min-width:220px; }
+#label-family,#label-content,#label-rate,.textarea{
+  display:block; font-family:"Cinzel",serif; font-weight:600; color:var(--gold-bright);
+  font-size:15px; letter-spacing:.5px; margin-bottom:10px;
 }
+.row{ display:flex; align-items:center; gap:8px; margin:6px 0; }
+.sub-container,#materias div{ display:flex; flex-wrap:wrap; gap:10px 16px; margin:6px 0; align-items:center; }
+input[type="radio"],input[type="checkbox"]{ accent-color:var(--gold); width:16px; height:16px; cursor:pointer; }
 
-#family-container {
-  display: flex;
-  flex-direction: column;
+hr{ border:0; border-top:1px solid var(--line); margin:4px 0; }
+.radio-buttons{ display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px; }
+.radio-buttons #label-rate{ width:100%; margin-bottom:4px; }
+
+#textarea{ resize:vertical; min-height:120px; }
+#counter{ align-self:flex-end; font-size:13px; color:var(--muted); margin-top:-8px; }
+.agreement{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+#label-infos{ color:var(--text); cursor:pointer; }
+
+#submit-btn{
+  font-family:"Cinzel",serif; font-weight:700; letter-spacing:1px; font-size:15px; cursor:pointer;
+  background:var(--gold); color:#1c1402; border:0; border-radius:10px; padding:14px; margin-top:4px;
+  transition:.2s;
 }
+#submit-btn:hover:not(:disabled){ background:var(--gold-bright); }
+#submit-btn:disabled{ background:#3a3023; color:#8c8067; cursor:not-allowed; }
 
-#label-family {
-  margin-bottom: 10px;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 3px;
-  margin-left: 10px;
-}
-
-#Frontend , #Backend , #FullStack {
-  margin-right: 5px;
-}
-
-.container-email-casa , .container-nome {
-  display: flex;
-  margin-top: 15px;
-}
-
-#label , #input-lastname , #agreement {
-  margin-left: 20px;
-}
-
-form .container-flex {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
-#materias {
-  display: flex;
-  flex-direction: column;
-
-}
-
-#counter {
-  margin-top: 5px;
-  display: flex;
-  justify-content: end;
-}
-
-#materias .sub-containers {
-  display: flex;
-}
-
-hr {
-  margin: 30px 0;
-}
-
-.radio-buttons {
-  flex-direction: row;
-}
-
-#radio1 {
-  margin-left: 30px;
-}
-
-#radio2 {
-  margin-left: 5px;
-}
-
-.textarea , .agreement {
-  margin: 20px 0 5px;
-}
-
-#textarea {
-  border-radius: 5px;
-}
-
-.agreement {
-  flex-direction: row;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(50, 167, 145);
-  position: fixed;
-  height: 80px;
-  bottom: 0;
-  width: 100%;
-  color: white;
+#trybewarts-forms-logo{ width:120px; height:auto; opacity:.85; }
+.footer{
+  text-align:center; color:var(--muted); font-size:13px; padding:24px 16px 0;
+  border-top:1px solid var(--line); margin-top:10px;
 }
