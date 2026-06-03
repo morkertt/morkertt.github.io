@@ -36,10 +36,14 @@ class Login extends React.Component {
   render() {
     const { loginEmail, loginPassword, isLoginDisabled } = this.state;
     const { handleClick, history } = this.props;
+    const hint = 'Como testar: entre com um e-mail válido e senha de 6+ caracteres '
+      + '(não há cadastro real). Depois adicione despesas e veja '
+      + 'o total converter pela cotação do dia.';
 
     return (
-      <div>
+      <div className="login-page">
         <p>Login</p>
+        <p className="demo-hint">{hint}</p>
         <form>
           <label htmlFor="email-input">
             Email:
